@@ -21,7 +21,7 @@ public class LongestSequence {
     
     public static void main(String[] args) throws IOException {
         String allFileInString = new Scanner(new File(args[0]), StandardCharsets.UTF_8).useDelimiter("\\Z").next();
-        List<String> rows = new ArrayList<>(Arrays.asList(allFileInString.split("\\n")));
+        List<String> rows = new ArrayList<>(Arrays.asList(allFileInString.split("\\r\\n")));
         int result = 0;
         for (String row : rows) {
             int currentLength = 0;
