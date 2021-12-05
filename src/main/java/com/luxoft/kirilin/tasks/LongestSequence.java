@@ -39,6 +39,5 @@ public class LongestSequence {
             }
             if(result < currentLength) result = currentLength;
         }
-        System.out.println(result);
     }
 }
